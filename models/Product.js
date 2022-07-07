@@ -30,9 +30,8 @@ Product.init(
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue: 10,
       validate: {
-        //must be at least 10 characters long
-        len: [10],
         //must be a number
         isNumeric: true
     }

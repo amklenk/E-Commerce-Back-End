@@ -14,11 +14,6 @@ router.get('/', (req, res) => {
       {
         model: Tag,
         attributes: ['id', 'tag_name'],
-        include: {
-          model: ProductTag,
-          attributes: ['id', 'product_id', 'tag_id']
-        }
-        // [sequelize.literal('(SELECT id,  FROM product_tag WHERE product.id = product_tag.product_id)')]]
       }
     ]
   })
@@ -42,11 +37,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model: Tag,
-        attributes: ['id', 'tag_name'],
-        include: {
-          model: ProductTag,
-          attributes: ['id', 'product_id', 'tag_id']
-        }
+        attributes: ['id', 'tag_name']
       }
     ]
   })
@@ -65,6 +56,13 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+  //post
+  // "product_name" : "Basketball",
+  // "price": 200.00,
+  //"stock": 3,
+  //"category_id": 2
+  //"tagIds" : [productTagIds]
+  //
   /* req.body should look like this...
     {
       product_name: "Basketball",
