@@ -1,3 +1,4 @@
+//This index.js controls the associations, which will create the joined tables in MySQL
 // import models
 const Product = require('./Product');
 const Category = require('./Category');

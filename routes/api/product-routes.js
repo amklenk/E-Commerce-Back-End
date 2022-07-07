@@ -47,7 +47,6 @@ router.get('/:id', (req, res) => {
           model: ProductTag,
           attributes: ['id', 'product_id', 'tag_id']
         }
-      //   [sequelize.literal('(SELECT id, product_id, tag_id FROM product_tag WHERE product.id = product_tag.product_id)')]]
       }
     ]
   })

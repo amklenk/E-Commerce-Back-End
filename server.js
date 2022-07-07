@@ -1,3 +1,4 @@
+//this server runs all of the routes/sequelize queries by connecting with the database
 const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');

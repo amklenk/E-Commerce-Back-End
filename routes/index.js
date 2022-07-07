@@ -1,3 +1,4 @@
+//this index.js is the router for all of the routes with the idea that there would be html routes in the future
 const router = require('express').Router();
 const apiRoutes = require('./api');
 
