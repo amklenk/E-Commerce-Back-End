@@ -36,7 +36,7 @@ To populate the tables. The api folder contains the index.js file and the api fo
 
 ## Links
 - [GitHub Repository](https://github.com/amklenk/E-Commerce-Back-End)
-- [Walkthrough Video 1 Link for Startup](https://drive.google.com/file/d/1oqR0_LpOv3HVmzhalRDqLmo5eQkTGo7H/view?usp=sharing)
+- [Walkthrough Video 1 Link for Setup and Running the Server](https://drive.google.com/file/d/1oqR0_LpOv3HVmzhalRDqLmo5eQkTGo7H/view?usp=sharing)
 - [Walkthrough Video 2 Link for Get and Get by Id Functionality](https://drive.google.com/file/d/1NYr3K-QktNpV8T0SzBs2H7GR5ljaigHL/view?usp=sharing)
 - [Walkthrough Video 3 Link for Post Functionality](https://drive.google.com/file/d/1oUvrDNOsybouuSdnqRuP2FSYAfjTR_A1/view?usp=sharing)
 - [Walkthrough Video 4 Link for Put and Delete Functionality](https://drive.google.com/file/d/1ovx8QpuSi0_GBmIw1_hXwLGC5iANd_iO/view?usp=sharing)
