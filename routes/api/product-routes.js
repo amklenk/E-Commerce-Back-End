@@ -56,21 +56,6 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
-  //post
-  // "product_name" : "Basketball",
-  // "price": 200.00,
-  //"stock": 3,
-  //"category_id": 2
-  //"tagIds" : [1, 2, 3, 4]
-  //
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
-    }
-  */
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
@@ -95,7 +80,6 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
-  // update product tags
   Product.update(req.body, {
     where: {
       id: req.params.id,
@@ -136,6 +120,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+  //id: 
   Product.destroy({
     where: {
       id: req.params.id,
